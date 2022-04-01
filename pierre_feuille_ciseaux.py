@@ -16,7 +16,7 @@ def pierre_feuille_ciseaux():
     while i < 10 :
 
         # Votre choix de jeu est demandé jusqu'à 10 fois max
-        choix_joueur = input()
+        choix_joueur = input("Entrez pierre feuille ou ciseaux -> ")
 
         # Le choix du bot sera tiré au hasard suivant le résultat de cette variable
         choix_hasard_bot = randint(0,2)
@@ -25,7 +25,7 @@ def pierre_feuille_ciseaux():
         choix_bot = choix_bot_complet[choix_hasard_bot]
 
         # On affiche le choix du bot afin de comparer
-        print(choix_bot)
+        print("bot :",choix_bot)
 
         # Si votre choix et celui du bot sont identiques, égalité
         if choix_joueur == choix_bot :
